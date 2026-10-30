@@ -1,0 +1,1730 @@
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY  */
+body {
+    background-color:rgba(38, 56, 73, 1);
+    color: white;
+    overflow-x: hidden;
+}
+
+body i {
+    font-family:'FontAwesome'!important;
+}
+
+/* BODY clarito*/
+.clarito {
+    background-color: rgb(154, 168, 171);
+    color: rgba(38, 56, 73, 1);
+}
+
+.clarito h3 {
+    color: rgba(38, 56, 73, 1);
+}
+
+/* H  */
+h1 {
+    font-family: "League Gothic", sans-serif;
+    font-size: 10vw;
+    font-weight: 300;
+    color: rgba(38, 56, 73, 1);
+    margin: 0;
+    line-height: 1em;
+
+}
+
+h2 {
+    font-family: "League Gothic", sans-serif;
+    font-weight: 300;
+    font-size: 5em;
+    color: rgba(201, 213, 201, 1);
+    margin: 0;
+}
+
+h3 {
+    font-family: "League Gothic", sans-serif;
+    font-size: 80px;
+    font-weight: 400;
+    color: rgba(201, 213, 201, 1);
+}
+
+h4 {
+    font-size: 1.5em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    margin: 0.2em;
+}
+
+h5 {
+    font-size: 2em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    margin: 0.2em;
+    
+}
+
+h6 {
+    font-family: "League Gothic", sans-serif;
+    font-size: 8em;
+    font-weight: 300;
+    color: rgba(38, 56, 73, 1);
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5em;
+}
+
+
+/* MENU*/
+.menu-cont {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+nav {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8em;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    background-color:rgba(38, 56, 73, 1);
+    height: 10vh;
+}
+
+.clarito nav {
+    background-color:rgb(154, 168, 171);
+}
+
+nav > a {
+    text-decoration: none;
+    margin-left: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+nav > a > img {
+    width: 3em;
+    height: auto;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-right: 2em;
+    margin-top: 2em;
+    gap: 30px;
+    transition: 0.4s;
+    overflow-x: hidden;
+}
+
+#menu_clarito {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-right: 2em;
+    margin-top: 30px;
+    gap: 30px;
+    transition: 0.4s;
+}
+
+#menu > li > a {
+    color: rgba(201, 213, 201, 1);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#menu_clarito > li > a {
+    color: rgba(38, 56, 73, 1);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.clarito > nav > #menu > li > a {
+    color: rgba(38, 56, 73, 1);
+}
+
+#menu li a {
+    transition: opacity 0.3s ease;
+}
+
+#menu li a:hover {
+    opacity: 0.3;
+}
+
+
+#menu_clarito li a {
+    transition: opacity 0.3s ease;
+}
+
+#menu_clarito li a:hover {
+    opacity: 0.3;
+}
+
+#menu li a:hover:not(:hover) {
+    opacity: 0.5;
+}
+
+#menuToggle {
+    display: none;
+}
+
+.menu-cont .menu-icon {
+    display: none;
+}
+
+.fa-bars {
+    color: rgba(201, 213, 201, 1);
+}
+
+.oscuro i {
+    color: rgba(38, 56, 73, 1);
+}
+
+/* HEADER */
+header {
+    height: 90vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header > div > img {
+    width: 35vw;
+    height: auto;
+    margin-bottom: 7em;
+}
+
+header > div > img:hover {
+    animation: shake 0.8s infinite;
+}
+
+header > i {
+    position: absolute;
+    bottom: 40px;
+    color: rgba(201, 213, 201, 1);
+}
+.index {
+    height: 90vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.typewriter {
+    font-size: 16em;
+    letter-spacing: 3px;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 1.5s steps(4) forwards, cursor 0.4s step-end infinite alternate;
+    margin-bottom: 80px;
+    color: rgba(201, 213, 201, 1);
+}
+
+/* COMPRA ENTRADA  */
+#frase {
+    height: 30vh;
+}
+
+#frase h4 {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: rgba(38, 56, 73, 1);
+}
+
+#fechas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    height: 70vh;
+    gap: 2em;
+}
+
+#fechas::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../media/images/montanas.jpg);
+    background-position: top right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#fechas > * {
+    position: relative;
+}
+
+
+#fechas div:first-child {
+    font-size: 2.5vw;
+}
+
+#fechas h2, #fechas h3 {
+    color: rgba(38, 56, 73, 1);
+    margin: 0;
+    text-align: center;
+}
+
+#boton_compra_entrada a {
+    color: rgba(38, 56, 73, 1);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid rgba(38, 56, 73, 1);
+    padding: 8px 12px;
+    border-radius: 50px; 
+    background-color: rgba(245, 245, 245, 0.713);
+}
+
+#boton_compra_entrada a:hover {
+    background-color: rgba(38, 56, 73, 1);
+    color: rgba(201, 213, 201, 1);
+    border: 2px solid rgba(201, 213, 201, 1);
+}
+
+#boton_viajar {
+    position: absolute;
+    bottom: 40px;
+}
+
+#boton_viajar a {
+    color: rgba(38, 56, 73, 1);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 50px; 
+    background-color: rgba(201, 213, 201, 1);
+}
+
+#boton_viajar a:hover {
+    background-color: rgba(38, 56, 73, 1);
+    color: rgba(201, 213, 201, 1);
+    border: 2px solid rgba(201, 213, 201, 1);
+}
+
+/* HISTORIA  */
+.card {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(38, 56, 73, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+}
+
+.card h2 {
+    font-size: 8em;
+}
+
+.card p {
+    font-size: 3em;
+}
+
+#historia .card h2 {
+    margin: 80px 0 20px 0;
+    position: absolute;
+    top: 10px;
+    left: 60px;
+    z-index: 1;
+}
+
+#historia .card p {
+    font-size: 1.3em;
+    margin-left: 30px;
+    margin-right: 50px;
+}
+
+#historia img {
+    width: 50%;
+    height: 50%;
+    margin-left: 3em;
+}
+
+/* EXPOSICIÓN */
+
+/* LINEA TIEMPO */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background: rgba(38, 56, 73, 1);
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    animation: moveline 6s linear forwards;
+}
+
+/* CONTENEDORES */
+.contenedor {
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+}
+
+.contenedor:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.contenedor:nth-child(3) {
+    animation-delay: 2s;
+}
+
+.contenedor:nth-child(4) {
+    animation-delay: 3s;
+}
+
+.contenedor:nth-child(5) {
+    animation-delay: 4s;
+}
+
+.contenedor:nth-child(6) {
+    animation-delay: 5s;
+}
+
+.contenedor-izq {
+    left: 0;
+}
+
+.contenedor-der {
+    left: 50%;
+}
+
+.text-box {
+    padding: 20px 30px;
+    position: relative;
+}
+
+.text-box p {
+    font-size: 1em;
+}
+
+.text-box img {
+    width: 70%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.text-box img:hover {
+    animation: shake 0.8s infinite;
+}
+
+.circle {
+    height: 25px;
+    width: 25px;
+    background-color: rgba(38, 56, 73, 1);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.contenedor span {
+    position: absolute;
+    right: -11px;
+    top: 32px;
+    z-index: 10;
+}
+
+.contenedor-der span {
+    left: -15px;
+}
+
+/* HOMENAJE */
+#header_homenaje {
+    overflow: hidden;
+    color: rgba(38, 56, 73, 1);
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    height: 90vh;
+}
+
+.cita_homenaje {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: rgba(38, 56, 73, 1);
+}
+.cita_homenaje p {
+    font-size: 1.2em;
+}
+
+#nombres {
+    overflow: hidden;
+    white-space: nowrap; 
+    width: 100%; 
+    position: relative; 
+    animation: moverEnBucle 60s linear infinite;
+
+    writing-mode: vertical-rl; 
+    text-orientation: mixed; 
+    transform: rotate(180deg); 
+    padding: 0 0px; 
+    margin-right: 0px; 
+}
+
+.textovertical {
+    display: inline-block; 
+    overflow: hidden;
+}
+
+#memorial {
+    display: flex;
+    position: relative;
+    background-image: url(../media/images/cruzvalle.jpg);
+    background-attachment: fixed;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    background-size: cover;
+}
+     
+.overlay {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transition: opacity 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6em;
+}
+
+.overlay h3 {
+    color: rgba(201, 213, 201, 1);
+    font-size: 4em;
+}
+
+.overlay p {
+    color: rgba(201, 213, 201, 1);
+    font-size:1.3em;
+    text-align: center;
+}
+
+#memorial:hover {
+    opacity: 0,6; 
+}
+      
+.overlay:hover {
+    opacity: 1;
+}
+
+#textomemorial {
+    padding: 10%;
+    padding-left: 30%;
+    display: flex;
+}
+
+.supervivientes_vertical {
+    writing-mode: vertical-lr;
+    text-align: left; 
+    margin-right: 10%; 
+}
+
+.valle_texto p {
+    flex: 1;
+    font-size: 1.4em;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 5%; 
+}
+  
+.image {
+    overflow: hidden;
+}
+  
+.image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+  
+.image:hover img {
+    transform: scale(1.1);
+}
+
+/* ENTRADAS*/
+#header_entradas {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#header_entradas > div {
+    flex:50%;
+}
+
+.mes_entrada {
+    display: flex;
+    flex-direction: column;
+    line-height: 2vw;
+}
+
+.mes_entrada > div {
+    padding: 2em 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+
+.mes_entrada > div:hover a {
+    color: rgba(38, 56, 73, 1);
+    transition: 0.3s ease-in-out;
+}
+
+.mes_entrada a {
+    font-family: "League Gothic", sans-serif;
+    font-weight: 300;
+    font-size: 6em;
+    color: rgba(201, 213, 201, 1);
+    text-decoration: none;
+}
+
+.subrayado {
+    position: relative;
+    height: 0.5em;
+    display: flex;
+    align-items: center;
+    transition: 1s;
+}
+
+.subrayado::after {
+    position: absolute;
+    width: 50%;
+    bottom: -0.3em;
+    content: "";
+    width: 0px;
+    height: 3px;
+    display: block;
+    background: rgba(38, 56, 73, 1);
+    transition: 500ms;
+}
+
+.subrayado:hover::after {
+    width: 100%;
+}
+
+
+.texto_entrada {
+    padding: 1%;
+}
+
+.texto_entrada > div{
+    padding: 10% 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: baseline;   
+}
+.texto_entrada p {
+    font-size: 1.2em;
+}
+
+/* MESES */
+#header_mes {
+    display: flex;
+    height: 80vh;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    padding-left: 5%;
+    padding-right: 5%;
+    flex-direction: row;
+}
+
+#header_mes > div {
+    flex: 50%;
+}
+
+.mes_flecha {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 3em;
+    height: 90%;
+}
+
+.mes_flecha a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 3vw;
+    color: rgba(201, 213, 201, 1);
+    display: flex;
+}
+
+.mes_flecha div:hover a {
+    color:  rgba(38, 56, 73, 1);
+}
+
+.flecha {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 5em;
+    width: 5em;
+}
+
+.titulo_mes {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    line-height: 12vw;
+    font-size: 1.2vw;
+}
+
+.siguiente {
+    display: flex;
+    justify-content: center;
+}
+
+.calendarios {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.calendario_day {
+    /* width: 50%; */
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.calendario_day_grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.3em;
+    width: 20em;
+    /* height: 50px; */
+    margin: 0 auto;
+    padding: 2em 0;
+    font-size: 1.15em;
+}
+
+.calendario_hour_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.3em;
+    width: 20em;
+    margin: 0 auto;
+    padding: 2em 0;
+    font-size: 1.15em;
+}
+
+.calendario_hour {
+    /* padding-bottom: 3em; */
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.day {
+    display: flex;
+    justify-content: center;
+    padding: 0.625em;
+    text-align: center;
+    border: 1px solid rgba(38, 56, 73, 1);
+    border-radius: 0.625em;
+    font-family: "League Gothic", sans-serif;
+    font-weight: 300;
+}
+
+.day:hover {
+    background-color:  rgba(38, 56, 73, 1);
+    color: rgb(154, 168, 171);
+}
+
+.day_nada {
+    opacity: 0;
+}
+
+.hour {
+    display: flex;
+    justify-content: center;
+    padding: 0.625em 0.75em;
+    text-align: center;
+    border: 1px solid rgba(38, 56, 73, 1);
+    border-radius: 0.625em;
+    font-family: "League Gothic", sans-serif;
+    font-weight: 300;
+}
+
+.hour:hover {
+    background-color:  rgba(38, 56, 73, 1);
+    color: rgb(154, 168, 171);
+}
+
+.day_no_disponible {
+    display: flex;
+    justify-content: center;
+    padding: 0.625em;
+    text-align: center;
+    color: rgba(201, 213, 201, 1);
+    border: 1px solid rgba(201, 213, 201, 1);
+    border-radius: 0.625em;
+    font-family: "League Gothic", sans-serif;
+    font-weight: 300;
+}
+
+.header_day {
+    color: rgba(38, 56, 73, 1);
+    font-family: "League Gothic", sans-serif;
+    font-weight: 300;
+    font-size: 2em;
+    text-align: center;
+}
+
+
+#espacio {
+    height: 20vh;
+    width: 100%;
+}
+
+/* PAGO */
+#formulario_pago {
+    display: flex;
+    align-items: flex-end;    
+}
+
+.finalizar_pago {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.titulo_mes h1 {
+    text-align: start;
+}
+
+.boton_f_p a{
+    color: rgba(38, 56, 73, 1);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid rgba(38, 56, 73, 1);
+    padding: 8px 12px;
+    border-radius: 50px; 
+    background-color: rgba(245, 245, 245, 0.713);
+}
+.boton_f_p a:hover {
+    background-color: rgba(38, 56, 73, 1);
+    color: rgba(201, 213, 201, 1);
+    border: 2px solid rgba(201, 213, 201, 1);
+}
+
+#formulario_pago input[type=text] {
+    height: 2.5em;  
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8em;
+    font-weight: 500;
+    color: rgba(38, 56, 73, 1);
+    border-radius: 10px;
+    border: 1px solid rgba(38, 56, 73, 1);
+    background-color: rgba(255, 255, 255, 0.514);
+}
+
+#formulario_pago input[type=email] {
+    height: 2.5em;  
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8em;
+    font-weight: 500;
+    color: rgba(38, 56, 73, 1);
+    border-radius: 10px;
+    border: 1px solid rgba(38, 56, 73, 1);
+    background-color: rgba(255, 255, 255, 0.514);
+}
+
+#formulario_pago > form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 2em;
+    padding-left: 4em;
+    width: 100%;
+}
+
+#formulario_pago div:first-child{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.correo {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+
+
+/* COMPRA REALIZADA */
+#body_c_r {
+    background-image: url(../media/images/montana.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+#header_c_r {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    row-gap: 7em;
+    height: 100vh;
+    padding: 3em;
+}
+
+#header_c_r div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.volver_inicio a{
+    color: rgba(245, 245, 245, 0.713);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid rgba(245, 245, 245, 0.713);
+    padding: 8px 12px;
+    border-radius: 50px; 
+    background-color: rgba(38, 56, 73, 1);
+}
+.volver_inicio a:hover {
+    background-color: rgba(201, 213, 201, 1);
+    color: rgba(38, 56, 73, 1);
+    border: 2px solid rgba(38, 56, 73, 1);
+}
+
+#header_c_r h4 {
+    color: rgba(38, 56, 73, 1);
+}
+#header_c_r div {
+    padding-bottom: 7%;
+    margin-top: -6%;
+}
+
+/* FOOTER*/
+footer {
+    background: linear-gradient(0deg, rgb(154, 168, 171) 0%, rgba(38,56,73,1) 100%);
+    width: 100%;
+}
+
+.invertido {
+    background: linear-gradient(0deg, rgba(38,56,73,1) 0%, rgb(154, 168, 171) 100%);
+}
+
+#info {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+#contacto h2 {
+    text-align: left;
+    margin-left: 15%;
+    margin-bottom: 5%;
+    line-height: 1em;
+}
+
+#contacto .contact_mail {
+    gap: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    transition: 0.3s;
+    margin-left: 15%;
+}
+
+#contacto .contact_mail input:first-child {
+    border-radius: 20px;
+    text-align: center;
+    background-color: rgba(38, 56, 73, 1);
+    color: rgb(154, 168, 171);
+    border-color: rgba(38, 56, 73, 1);
+    display: flex;
+    width: 35vw;
+    height: 3em;
+}
+
+#contacto .contact_mail input:nth-child(2) {
+    border-radius: 20px;
+    text-align: center;
+    background-color: rgba(38, 56, 73, 1);
+    color: rgb(154, 168, 171);
+    border-color: rgb(154, 168, 171);
+    display: flex;
+    width: 35vw;
+    height: 5em;
+}
+
+#contacto .contact_mail input:last-child {
+    color: rgba(38, 56, 73, 1);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid rgba(38, 56, 73, 1);
+    padding: 8px 12px;
+    border-radius: 50px; 
+    background-color: rgba(245, 245, 245, 0.713);
+}
+
+#contacto .contact_mail input:nth-child(2):hover {
+    background-color: rgb(154, 168, 171);
+    color:rgba(38, 56, 73, 1);
+    border: 0em;
+}
+
+#contacto .contact_mail input:first-child:hover {
+    background-color: rgb(154, 168, 171);
+    color: rgba(38, 56, 73, 1);
+    border: 0em;
+}
+
+#contacto .contact_mail input:last-child:hover {
+    background-color: rgba(38, 56, 73, 1);
+    color: rgb(154, 168, 171);
+    border-color: rgb(154, 168, 171);
+}
+
+#map > iframe {
+    display: flex;
+    width: 68vw;
+    padding-left: 15%;
+    padding-right: 10%;
+}
+footer > p {
+    display: flex;
+    color: rgba(38, 56, 73, 1);
+    justify-content: center;
+    font-size: 1em;
+}
+.invertido p {
+    color: rgb(154, 168, 171);
+}
+
+footer > a {
+    text-decoration: none;
+    color: rgba(38, 56, 73, 1);
+    padding-bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+}
+
+footer > a > span {
+    color: rgba(38, 56, 73, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .icons {
+    color:rgba(38, 56, 73, 1);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10%;
+    padding-top: 5%;
+    text-decoration: none;
+    justify-content:center;
+    gap: 2%;
+}
+
+footer .icons a {
+    color:rgba(38, 56, 73, 1);
+}
+.invertido .icons a {
+    color:rgb(154, 168, 171);
+}
+
+footer div > a:hover {
+    color: rgba(38, 56, 73, 1);
+}
+
+/* ANIMACIONES */
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-3deg); }
+    50% { transform: rotate(3deg); }
+    75% { transform: rotate(-3deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@keyframes cursor {
+    50% { border-color: transparent }
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes moveline {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+@keyframes movedown {
+    0% {
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes moverEnBucle {
+    0% { left: 40%; }
+    100% { left: -100%; }
+    }
+
+
+/* MEDIA QUERY*/
+
+/* tablet 1024px */
+@media only screen and (max-width: 1024px) {
+    header > div > img {
+        width: 60vw;
+        height: auto;
+        margin-bottom: 7em;
+    }
+    #fechas h2 {
+        font-size: 6em;
+    }
+    #fechas h3 {
+        font-size: 4em;
+    }
+
+    .card {
+        flex-direction: column;
+    }
+
+    .card h2 {
+        font-size: 6em;
+    }
+
+    .card p {
+        font-size: 1em;
+    }
+
+
+    #frase {
+        height: 10vh;
+        padding-top: 40px;
+    }
+
+    #frase h4 {
+        font-size: 1.2em;
+    }
+
+    .text-box {
+        padding: 0;
+        font-size: 0.9em;
+    }
+
+    .text-box h3{
+        font-size: 5em;
+    }
+
+    .contenedor {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .text-box img {
+        width: 90%;
+    }
+   
+    #historia .card h2 {
+        position: relative;
+        left: 0;
+        margin-top: -60px;
+    }
+    #historia .card p {
+        font-size: 1em;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 30px;
+        text-align: center;
+    }
+    #historia img {
+        margin-left: 0;
+        width: 80%;
+        height: auto;
+    }
+
+    #header_mes {
+        flex-direction: column;
+        gap: 3em;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mes_flecha {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-right: 4em;
+    }
+
+    #header_entradas {
+        flex-direction: column-reverse;
+    }
+
+    #header_entradas > div {
+        flex: none;
+    }
+
+    .texto_entrada {
+        padding-bottom: 5%;
+    }
+
+    .texto_entrada > div {
+        padding: 0% 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+        text-align: center;
+    }
+
+    .texto_entrada > div h5 {
+        font-size: 1em;
+    }
+    
+    .texto_entrada > div p {
+        font-size: 1em;
+    }
+    
+    #espacio {
+        height: 14vh;
+    }
+
+    .mes_entrada > div {
+        padding: 2em 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .mes_entrada a {
+        font-size: 5em;
+        line-height: 1vw;
+
+    }
+
+    .mes_flecha a {
+        font-size: 4vw;
+    }
+
+    #formulario_pago {
+        display: flex;
+        align-items: center;   
+    }
+
+    #formulario_pago > form{
+        padding-left: 0;
+    }
+
+    .titulo_mes h1 {
+        text-align: center;
+    }
+
+    .flecha {
+        justify-content: center;
+    }
+
+    #header_c_r h1 {
+        font-size: 10vw;
+        text-align: center;
+    }
+
+    #header_c_r h4 {
+        font-size: 2vw;
+        text-align: center;
+        line-height: 1vw;
+    }
+
+    /* RESPOSIVE HOMENAJE */
+
+    #memorial {
+        width: 100%;
+        height: 60vh;
+    }
+
+    .cita_homenaje {
+        padding-top: 20%;
+    }
+
+    .cita_homenaje h4 {
+        font-size: 1.6em;
+    }
+
+    .cita_homenaje p {
+        font-size: 1.2em;
+    }
+
+    #header_homenaje {
+        justify-content: space-between;
+    }
+
+    #pasajeros {
+        padding-bottom: 5%;
+    }
+
+    .textoverctical> h6{
+        font-size: 5em;
+    }
+
+    #memorial .overlay h2 {
+        font-size: 3em;
+    }
+
+    #textomemorial {
+        flex-direction: column;
+        padding: 10%;
+        align-items: center;
+        text-align: center;
+    }
+    .supervivientes_vertical {
+        margin-right: 0;
+    }
+
+    .overlay {
+        opacity: 1;
+        width: 70%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 0.6em;
+    }
+    .overlay h3 {
+        font-size: 3.2em;
+        text-align: center;
+    }
+    .overlay p {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .valle_texto p {
+        font-size: 1em;
+        padding-top: 6%;
+    }
+
+    .supervivientes_vertical h3{
+        writing-mode: horizontal-tb;
+        font-size: 4em;
+    }
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: auto;
+
+    }
+    #info {
+        align-items: center;
+    }
+    #map > iframe {
+        display: flex;
+        width: 50vw;
+        margin-left: -0.7em;
+        height: 49vh;
+        padding-top: 2em;
+    }
+}
+
+
+
+/* movil 512px */
+@media only screen and (max-width: 512px) {
+    
+    .typewriter {
+        font-size: 50vw;
+    }
+    nav {
+        justify-content: center;
+        padding-top: 40px;
+        width: 100%; 
+    }
+    nav > a {
+        position: absolute;
+        left: 1px;
+        top: 1px;
+    }
+    .menu-cont {
+        display: block;
+    }
+    
+    .menu-cont .menu-icon {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .menu-cont .menu-icon i {
+        font-size: 1.5em;
+    }
+    
+    #menuToggle:checked ~ ul {
+        max-height: 100vh;
+        background-color: rgba(38, 56, 73, 0.896);
+        padding: 35px;
+        padding-top: 115px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin-top: 0;
+        z-index: -1;
+    }
+    #menu {
+        max-height: 0;
+        overflow: hidden;
+        flex-direction: column;
+    }
+    #menu a {
+        font-size: 1.2em;
+    }
+    header > div > img {
+        width: 70vw;
+    }
+    #fechas h2 {
+        font-size: 4em;
+    }
+    #fechas h3 {
+        font-size: 2em;
+    }
+
+    #boton_compra_entrada a {
+        font-size: 0.7em;
+    }
+
+    .card h2 {
+        font-size: 5em;
+    }
+
+   
+    #frase {
+        height: 10vh;
+        padding-top: 40px;
+    }
+    #frase h4 {
+        font-size: 1em;
+    }
+    
+    .timeline::after {
+        left: 25px;
+    }
+    .contenedor {
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 0;
+        padding-top: 45px;
+    }
+    .text-box {
+        font-size: 0.8em;
+    }
+    .text-box h3{
+        font-size: 5em;
+    }
+    .text-box img {
+        width: 70%;
+    }
+    .contenedor {
+        padding-left: 50px;
+        padding-right: 10px;
+    }
+    .contenedor-der {
+        left: 0;
+    }
+    .contenedor-izq .circle, .contenedor-der .circle {
+        left: 10px;
+    }
+    
+    .card {
+        height: 70vh;
+    }
+    #historia .card h2 {
+        font-size: 4.2em;
+        margin-top: 0;
+    }
+    #historia .card p {
+        font-size: 0.8em;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    #historia img {
+        margin-left: 0;
+        width: 90%;
+        height: auto;
+    }
+
+    #header_mes {
+        flex-direction: column;
+        gap: 3em;
+    }
+
+    .mes_flecha {
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 10%;
+        flex:none;
+        width: 100%;
+        padding-right: 0;
+        padding-top: 0;
+    }
+
+    .flecha {
+        width: 80%;
+        justify-content: flex-start;
+    }
+
+    .titulo_mes {
+        font-size: 2vw;
+    }
+
+    #header_entradas {
+        flex-direction: column-reverse;
+        justify-content: center;
+        height: 75vh;
+    }
+
+    #header_entradas > div {
+        flex: none;
+    }
+
+    .texto_entrada {
+        padding-bottom: 5%;
+    }
+
+    .texto_entrada > div h5 {
+        font-size: 1.2em;
+    }
+    
+    .texto_entrada > div p {
+        font-size: 0.8em;
+    }
+
+    .mes_entrada > div {
+        padding: 2em 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .mes_entrada a {
+        font-size: 4em;
+        line-height: 0.5vw;
+
+    }
+
+    .calendario_day_grid  {
+        font-size: 0.7em;
+
+    }
+    
+    .calendario_hour_grid {
+        font-size: 0.7em;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .titulo_mes h1 {
+        font-size: 20vw;
+        line-height: 18vw;
+    }
+
+    #header_c_r h1 {
+        font-size: 5em;
+        text-align: center;
+        line-height: 1em;
+    }
+
+    #header_c_r h4 {
+        font-size: 1em;
+        text-align: center;
+        line-height: 1em;
+    }
+    .mes_flecha a {
+        font-size: 6vw;
+    }
+
+    /* RESPOSIVE HOMENAJE */
+
+    .cita_homenaje {
+        padding-top: 40%;
+    }
+    .cita_homenaje h4 {
+        font-size: 1.2em;
+    }
+    .cita_homenaje p {
+        font-size: 0.9em;
+    }
+    #header_homenaje {
+        justify-content: space-between;
+    }
+    #pasajeros {
+        padding-bottom: 10%;
+    }
+    #nombres {
+        font-size: 1.8em;
+    }
+
+    #memorial {
+        width: 100%;
+        height: 60vh;
+    }
+
+    .gallery {
+        display: block; 
+        overflow-x: auto; 
+        white-space: nowrap; 
+    }
+
+    .image {
+        display: inline-block; 
+        width: auto;    
+    }
+
+    .textoverctical> h6{
+        font-size: 3em;
+    }
+    #memorial .overlay h2 {
+        font-size: 2em;
+    }
+
+    #textomemorial {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #textomemorial h3 {
+        font-size: 2.7em;
+    }
+    #textomemorial p {
+        font-size: 0.8em;
+    }
+
+    .valle_texto p {
+        font-size: 0.7em;
+        padding-top: 2%;
+    }
+
+    .overlay {
+        width: 90%;
+    }
+
+    .overlay h3 {
+        font-size: 2em;
+        text-align: center;
+    }
+    .overlay p {
+        font-size: 0.8em;
+        text-align: center;
+    }
+
+    .supervivientes_vertical h3{
+        writing-mode: horizontal-tb;
+        font-size: 2.5em;
+    }
+
+    #info {
+        flex-direction: column;
+    }
+
+    #contacto h2 {
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: center;
+        font-size: 3em;
+    }
+    #contacto .contact_mail {
+        margin-left: 10%;
+        margin-right: 10%;
+        display: flex;
+        align-items: center;
+    }
+    #contacto .contact_mail input:first-child {
+        width: 80vw;
+    }
+    #contacto .contact_mail input:nth-child(2) {
+        width: 80vw;
+    }
+
+    #map > iframe {
+        display: flex;
+        width: 100vw;
+        margin-left: -0.7em;
+        height: 25vh;
+        padding-top: 2em;
+    }
+    footer > p {
+        text-align: center;
+        padding: 0.5em;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 0.9em;
+    }
+    footer .icons {
+        font-size: 1.7em;
+        gap: 2em;
+    }
+
+}
+
+
+
+
